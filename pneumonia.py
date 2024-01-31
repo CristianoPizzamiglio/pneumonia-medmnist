@@ -118,7 +118,7 @@ def fit_model(
     model : tf.keras.models.Sequential
 
     """
-    logdir = os.path.join("logs", datetime.datetime.now().strftime("%Y%m%d-%H%M%S"))
+    logdir = os.path.join("runs", datetime.datetime.now().strftime("%Y%m%d-%H%M%S"))
     tensorboard_callback = tf.keras.callbacks.TensorBoard(logdir, histogram_freq=1)
 
     model_checkpoint_callback = tf.keras.callbacks.ModelCheckpoint(
