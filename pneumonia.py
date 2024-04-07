@@ -102,6 +102,7 @@ def create_model() -> tf.keras.models.Sequential:
         ]
     )
     model.compile(optimizer="adam", loss="binary_crossentropy", metrics=["accuracy"])
+    model.summary()
     return model
 
 
