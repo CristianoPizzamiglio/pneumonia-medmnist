@@ -21,7 +21,23 @@ model-index:
         value: 0.9656488299369812
 ---
 
-Image classification model for the [PneumoniaMNIST](https://zenodo.org/records/10519652) dataset.
+Convolutional neural network to classify images of the [PneumoniaMNIST](https://zenodo.org/records/10519652) dataset.
+For educational purposes.
 
-![healthy](images/healthy.png)
-![pneumonia](images/pneumonia.png)
+<p>
+  <img src="images/healthy.png" width=300 />
+  <img src="images/pneumonia.png" width=300 /> 
+</p>
+
+The model hyperparameters are tuned with [KerasTuner](https://keras.io/keras_tuner/)
+using the [Hyperband](https://arxiv.org/abs/1603.06560) optimization algorithms. The 
+hyperparameters are:
+* Learning rate
+* Number of convolutional layers
+* Number of convolutional filters
+* Dropout
+* Number of neurons in the dense layer
+
+A utility function is also available for plotting the feature maps (random channels):
+
+![feature_map](images\feature_maps\3.svg)
