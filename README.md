@@ -40,4 +40,4 @@ hyperparameters are:
 
 A utility function is also available for plotting the feature maps (random channels):
 
-![feature_map](images\feature_maps\3.svg)
+![feature_map](images/feature_maps/3.png)
