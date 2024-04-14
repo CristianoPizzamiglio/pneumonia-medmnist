@@ -22,7 +22,7 @@ model-index:
 ---
 
 Convolutional neural network to classify images of the [PneumoniaMNIST](https://zenodo.org/records/10519652) dataset.
-For educational purposes.
+For educational purposes. Code with docstring and type hints.
 
 <p>
   <img src="images/healthy.png" width=300 />
